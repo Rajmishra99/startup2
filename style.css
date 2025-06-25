@@ -26,9 +26,9 @@ body {
   color: var(--white);
 }
 
-.logo img {
-  height: 50px;
-  width: auto;
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .nav-links {
