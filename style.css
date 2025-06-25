@@ -76,6 +76,57 @@ body {
   border-radius: 5px;
   font-weight: bold;
 }
+.about-section {
+  padding: 60px 10%;
+  background-color: #f9f9f9;
+}
+
+.about-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.8s ease;
+}
+
+.about-container.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  color: #005baf;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
 
 .features {
   padding: 4rem 2rem;
