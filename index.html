@@ -4,44 +4,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Internwala | Home</title>
+  <title>Internwala | Learn With Internship</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="main-header">
-    <nav class="navbar">
-      <div class="logo">Internwala</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">What We Provide</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="navbar">
+    <div class="container nav-content">
+      <h1 class="brand">Internwala</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">What We Provide</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <section class="hero">
-    <div class="hero-content">
-      <h1>Build Your Career with Training & Internships</h1>
-      <p>Real Skills. Real Growth. Join Internwala Today.</p>
-      <a href="services.html" class="btn">Explore Programs</a>
+    <div class="container">
+      <div class="hero-text">
+        <h2>Learn. Build. Intern.</h2>
+        <p>Internwala offers hands-on training & internship programs in 50+ career-building domains for students and graduates.</p>
+        <a href="services.html" class="btn-primary">Get Started</a>
+      </div>
+      <div class="hero-img">
+        <img src="img/carousel-1.jpg" alt="Students learning" />
+      </div>
     </div>
   </section>
 
-  <section class="about-section" id="about">
-    <div class="about-container">
-      <div class="about-text">
-        <h2>About Internwala</h2>
-        <p>Internwala is a student-focused platform committed to bridging the gap between classroom education and real-world experience. We provide structured training and internship programs across 50+ domains to help students build practical skills and gain career-ready exposure.</p>
-        <p>Our goal is to empower students with hands-on learning, industry-aligned training, and guided career support — so they can grow confidently into tomorrow’s professionals.</p>
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title">Why Choose Internwala?</h2>
+      <div class="feature-grid">
+        <div class="feature-box">
+          <h3>50+ Domains</h3>
+          <p>Explore a wide range of industry-relevant training fields.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Real Internship Projects</h3>
+          <p>Practical experience with real-time exposure.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Mentorship & Support</h3>
+          <p>Guidance from professionals throughout your journey.</p>
+        </div>
       </div>
-      <div class="about-image">
-        <img src="about-img.jpg" alt="Internwala Team" />
-      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to Kickstart Your Career?</h2>
+      <p>Join thousands of students learning and growing with Internwala.</p>
+      <a href="contact.html" class="btn-secondary">Contact Us</a>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Internwala. All Rights Reserved.</p>
+    <div class="container footer-content">
+      <p>© 2025 Internwala. All Rights Reserved.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
