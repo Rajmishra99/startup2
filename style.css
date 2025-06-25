@@ -78,7 +78,7 @@ body {
 }
 .about-section {
   padding: 60px 10%;
-  background-color: #f9f9f9;
+  background: #f9f9f9;
 }
 
 .about-container {
@@ -89,7 +89,7 @@ body {
   flex-wrap: wrap;
   opacity: 0;
   transform: translateX(100px);
-  transition: all 0.8s ease;
+  transition: all 1s ease;
 }
 
 .about-container.show {
@@ -102,19 +102,6 @@ body {
   min-width: 280px;
 }
 
-.about-text h2 {
-  font-size: 2rem;
-  color: #005baf;
-  margin-bottom: 1rem;
-}
-
-.about-text p {
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 1rem;
-  line-height: 1.6;
-}
-
 .about-image {
   flex: 1;
   min-width: 280px;
@@ -124,8 +111,15 @@ body {
 .about-image img {
   width: 100%;
   max-width: 400px;
-  border-radius: 12px;
+  border-radius: 10px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .features {
