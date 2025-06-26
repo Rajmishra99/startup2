@@ -227,3 +227,17 @@ footer {
     align-items: flex-end;
   }
 }
+/* Add at bottom of style.css */
+
+.feature-box,
+.hero-text {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+
+.feature-box.show,
+.hero-text.show {
+  opacity: 1;
+  transform: translateY(0);
+}
