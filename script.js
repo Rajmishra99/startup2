@@ -12,7 +12,7 @@ window.addEventListener("scroll", () => {
 // Future placeholder for contact form validation or animations
 // Hero Slider Logic
 const slider = document.getElementById("hero-slider");
-const images = ["img/slide1.jpg", "img/slide2.jpg", "img/slide3.jpg"];
+const images = ["slide 1.jpg", "slide 2.jpg", "slide 3.jpg"];
 let current = 0;
 
 setInterval(() => {
