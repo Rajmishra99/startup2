@@ -1,9 +1,12 @@
-window.addEventListener('scroll', () => {
-  const section = document.querySelector('.about-container');
-  const top = section.getBoundingClientRect().top;
-  const screenHeight = window.innerHeight;
-
-  if (top < screenHeight - 100) {
-    section.classList.add('show');
-  }
+// Scroll animation for sections
+window.addEventListener("scroll", () => {
+  const elements = document.querySelectorAll(".feature-box, .about-section, .hero-text");
+  elements.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      el.classList.add("show");
+    }
+  });
 });
+
+// Future placeholder for contact form validation or animations
