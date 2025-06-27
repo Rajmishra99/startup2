@@ -1,76 +1,110 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Internwala | Learn With Internship</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>eLEARNING - Online Learning Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="navbar">
-    <div class="container nav-content">
-      <h1 class="brand">Internwala</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">What We Provide</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <!-- Spinner -->
+    <div id="spinner" class="bg-white position-fixed d-flex align-items-center justify-content-center">
+        <div>Loading...</div>
     </div>
-  </header>
 
- <section class="hero">
-  <div class="container">
-    <div class="hero-text">
-      <h2>Learn. Build. Intern.</h2>
-      <p>Internwala offers hands-on training & internship programs in 50+ career-building domains for students and graduates.</p>
-      <a href="services.html" class="btn-primary">Get Started</a>
-    </div>
-    <div class="hero-img">
-      <img id="hero-slider" src="slide 1.jpg" alt="Training Image" />
-    </div>
-  </div>
-</section>
-
-  <section class="features">
-    <div class="container">
-      <h2 class="section-title">Why Choose Internwala?</h2>
-      <div class="feature-grid">
-        <div class="feature-box">
-          <h3>50+ Domains</h3>
-          <p>Explore a wide range of industry-relevant training fields.</p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-dark">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">eLEARNING</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Courses</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Our Team</a></li>
+                            <li><a class="dropdown-item" href="#">Testimonial</a></li>
+                            <li><a class="dropdown-item" href="#">404 Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+                </ul>
+                <a href="#" class="btn btn-primary ms-3">Join Now</a>
+            </div>
         </div>
-        <div class="feature-box">
-          <h3>Real Internship Projects</h3>
-          <p>Practical experience with real-time exposure.</p>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div class="swiper header-carousel">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1 class="animate__animated animate__fadeIn">Best Online Courses</h1>
+                            <h3>The Best Online Learning Platform</h3>
+                            <p>Your custom description here about the platform.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                            <a href="#" class="btn btn-secondary">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more slides as needed -->
         </div>
-        <div class="feature-box">
-          <h3>Mentorship & Support</h3>
-          <p>Guidance from professionals throughout your journey.</p>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <!-- Other sections (Services, About, Courses, Instructors, Testimonials, Footer) -->
+    <!-- Follow the same structure, replacing placeholder content with your own -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <a href="#" class="d-block text-white mb-2">About Us</a>
+                    <a href="#" class="d-block text-white mb-2">Contact Us</a>
+                    <a href="#" class="d-block text-white mb-2">Privacy Policy</a>
+                    <a href="#" class="d-block text-white mb-2">Terms & Conditions</a>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact</h5>
+                    <p>123 Street, New York, USA<br>+012 345 67890<br>info@example.com</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Gallery</h5>
+                    <!-- Add royalty-free images -->
+                </div>
+                <div class="col-md-3">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe for updates.</p>
+                    <input type="email" class="form-control mb-2" placeholder="Your Email">
+                    <button class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2025 eLEARNING. All Rights Reserved.</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <section class="cta">
-    <div class="container">
-      <h2>Ready to Kickstart Your Career?</h2>
-      <p>Join thousands of students learning and growing with Internwala.</p>
-      <a href="contact.html" class="btn-secondary">Contact Us</a>
-    </div>
-  </section>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top">↑</a>
 
-  <footer>
-    <div class="container footer-content">
-      <p>© 2025 Internwala. All Rights Reserved.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
