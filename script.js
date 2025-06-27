@@ -1,21 +1,40 @@
-// Scroll animation for sections
-window.addEventListener("scroll", () => {
-  const elements = document.querySelectorAll(".feature-box, .about-section, .hero-text");
-  elements.forEach(el => {
-    const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 100) {
-      el.classList.add("show");
+// Spinner
+document.addEventListener('DOMContentLoaded', () => {
+    const spinner = document.getElementById('spinner');
+    if (spinner) {
+        setTimeout(() => spinner.classList.remove('show'), 1);
     }
-  });
 });
 
-// Future placeholder for contact form validation or animations
-// Hero Slider Logic
-const slider = document.getElementById("hero-slider");
-const images = ["slide 1.jpg", "slide 2.jpg", "slide 3.jpg"];
-let current = 0;
+// Sticky Navbar
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar.sticky-top');
+    if (window.scrollY > 300) {
+        navbar.style.top = '0';
+    } else {
+        navbar.style.top = '-100px';
+    }
+});
 
-setInterval(() => {
-  current = (current + 1) % images.length;
-  slider.src = images[current];
-}, 5000);
+// Back to Top
+const backToTop = document.querySelector('.back-to-top');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTop.style.display = 'block';
+    } else {
+        backToTop.style.display = 'none';
+    }
+});
+backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Swiper Carousel
+const swiper = new Swiper('.header-carousel', {
+    autoplay: { delay: 5000 },
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
